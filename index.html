@@ -17,9 +17,9 @@
         <script>
             const socket = io.connect('http://localhost:4000')
             socket.on('image', (data) => {
-                console.log('data', data)
+                // console.log('data', data)
                 const imageElm = document.getElementById('image')
-                imageElm.src = `data:image/jpeg;base64,${image}`
+                imageElm.src = `data:image/jpeg;base64,${data}`
             })
         </script>
     </body>

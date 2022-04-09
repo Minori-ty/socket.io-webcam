@@ -20,3 +20,4 @@ setInterval(() => {
     io.emit('image', image)
 }, 1000 / FPS)
 server.listen(4000)
+console.log('run in http://localhost:4000')
